@@ -1,0 +1,25 @@
+#3) Faça um programa no qual o usuário precisa cadastrar as informações de dois produto: código, nome, quantidade e preço. No final o programa deve mostrar as informações cadastradas e exibir o valor total das compras.
+
+cod = input("Digite o código do produto: ")
+nome = input("Digite o nome do produto: ")
+qtd = int(input("Digite a quantidade de produto: ")) 
+preco = float(input("Digite o preço do produto: "))
+cod2 = input("Digite o código do segundo produto: ")
+nome2 = input("Digite o nome do produto: ")
+qtd2 = int(input("Digite a quantidade do produto: ")) 
+preco2 = float(input("Digite o preço do produto: "))
+
+total = (qtd * preco) + (qtd2 * preco2)
+
+print("----------------------")
+print(f"Código: {cod}")
+print(f"Nome: {nome}")
+print(f"Preço Unitário: R${preco}")
+print("----------------------")
+print("--------Produto 2--------------")
+print(f"Código: {cod2}")
+print(f"Nome: {nome2}")
+print(f"Preço Unitário: R${preco2}")
+print("----------------------")
+print(f"Total: R$ {total:.2f}")
+print("----------------------")
